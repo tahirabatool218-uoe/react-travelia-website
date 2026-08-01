@@ -58,6 +58,8 @@
 
 .contact-overlay {
     width: 90%;
+    padding: 0 8px;
+    margin: auto;
 }
 
 .contact-container {
@@ -341,7 +343,7 @@
 
     .contact-overlay {
         width: 100%;
-        padding: 0 16px;
+        
 
     }
 
@@ -370,9 +372,10 @@
     }
 
     .contact-left {
-        padding-left: 10px;
-        margin-left: 0;
-        margin-bottom: 0;
+        padding-left: 0;
+             margin-left: 0;
+        padding-top: 0;
+        margin-top: 0;
         padding-bottom: 0;
     }
 
@@ -382,13 +385,12 @@
     }
 
     .contact-right {
-        margin-top: -10px;
+       margin: -20px 0 0 0;
 
         padding: 25px 18px;
         box-shadow: 0 10px 30px rgba(37, 99, 235, .15);
         width: 100%;
-        max-width: 380px;
-
+        
         border-radius: 22px;
         padding: 28px 20px;
 
@@ -418,7 +420,7 @@
     }
 
     .contact-bottom {
-        width: 90%;
+        width: 100%;
         min-height: 140px;
         margin: 5px auto 0;
         padding: 25px 20px;
@@ -448,11 +450,7 @@
     }
 
     .bottom-illustration {
-        width: 220px;
-        right: -20px;
-        bottom: 0;
-        opacity: 0.25;
-
+        display: none;
     }
 
 }
