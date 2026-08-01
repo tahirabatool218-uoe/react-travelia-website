@@ -264,8 +264,22 @@
     .about-right {
         order: 2px;
     }
+.about-left {
+    flex: 1;
+}
 
+    .about-right {
+        flex: 1;
+    }
 
+.about-left img {
+    height: 320px;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+
+}
 
     .about-stats {
         width: 100%;

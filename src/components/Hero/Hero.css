@@ -119,6 +119,13 @@
         justify-content: left;
         flex-wrap: wrap;
     }
+    .hero-image{
+      margin: auto;
+    }
+    .hero-image img {
+        height: 320px;
+        width: 100%;
+    }
 
     /* .hero-image {
         margin-top: 10px;
