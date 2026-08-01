@@ -1,0 +1,129 @@
+.destination-section {
+    width: 90%;
+    margin: 60px auto;
+   
+    
+}
+
+.destination-heading {
+    text-align: center;
+}
+
+.destination-heading h5 {
+    color: #2563EB;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.destination-heading h2 {
+    font-size: 40px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.destination-heading p {
+    max-width: 500px;
+    margin: 0 auto;
+    /* color: #41464e; */
+    color: #6B7280;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.destination-card {
+    width: 95%;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    margin: auto;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+.destination-card:hover{
+    transform: translateY(-8px );
+    box-shadow:0 12px 25px rgba(0,0,0,0.2) ;
+}
+
+
+.destination-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+
+}
+.destination-card:hover .destination-image{
+transform: scale(1.08);
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.country {
+    color: #2563EB;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #6B7280;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    min-height: 55px;
+
+}
+
+.card-btn {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    background: #2563EB;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: auto;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+   
+}
+.card-btn:hover{
+    background: #1D4ED8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.3);
+}
+
+@media (max-width:992px) {
+    .destination-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:768px) {
+    .destination-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+  
+}

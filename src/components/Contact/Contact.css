@@ -1,0 +1,389 @@
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: linear-gradient(rgba(37, 99, 235, 0.08),
+            rgba(255, 255, 255, 0.15)),
+
+        url("../../assets/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px 50px 20px;
+    margin: 50px auto 0;
+
+}
+
+.contact-tag {
+    color: #2563EB;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.contact-header hr {
+    width: 55px;
+    border: none;
+    height: 1.3px;
+    background: #2563EB;
+    border-radius: 20px;
+    margin: auto;
+
+}
+
+.contact-header h2 {
+    font-size: 40px;
+    color: #111827;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.contact-description {
+    max-width: 550px;
+    margin: 20px auto 0;
+    text-align: center;
+    color: #6B7280;
+    line-height: 1.3;
+    font-size: 17px;
+}
+
+
+.contact-overlay {
+    width: 90%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-left {
+    flex: 1;
+    border-radius: 20px;
+    min-height: 650px;
+    /* border: 2px dashed #2563eb; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 70px;
+    padding-top: 10px;
+
+
+
+}
+
+.contact-left h2 {
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 20px;
+     padding-left: 40px;
+      margin-left: 40px;
+}
+
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 40px;
+    padding-left: 40px;
+}
+
+.info-card {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 340px;
+    background: #E8F1FF;
+    border: 1px solid #E8F1FF;
+    backdrop-filter: blur(8px);
+    padding: 18px 22px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+}
+
+.info-icon {
+    width: 58px;
+    height: 58px;
+    background: #2563eb;
+    color: #eef4ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    flex-shrink: 0;
+    transition: .3s;
+}
+
+.info-card:hover .info-icon {
+    background: #fff;
+    color: #2563eb;
+}
+
+.info-text h4 {
+    font-size: 18px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.info-text p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.travel-quote {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.travel-quote img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.contact-right {
+    width: 100%;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    min-height: 650px;
+    border: 2px dashed #2563eb;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+    padding: 40px;
+    border: 2px solid #2563eb;
+    margin-top: 20px;
+}
+
+.form-header {
+    margin-bottom: 25px;
+}
+
+.form-header h3 {
+    color: #111827;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.form-header p {
+    color: #6B7280;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    color: #111827;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    font-family: inherit;
+    background: #f8fbff;
+    transition: 0.3 ease;
+    border: 1px solid #6b7280;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563EB;
+    background: #fff;
+    box-shadow: 0 0 03px rgba(37, 99, 235, 0.08);
+}
+
+.contact-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563EB;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-submit:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+.contact-bottom {
+    width: 90%;
+    min-height: 100px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(0, 70, 150, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;;
+
+
+
+}
+
+.bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.bottom-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #1677ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.bottom-text h3 {
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #10244a;
+
+}
+
+.bottom-text p {
+    margin: 0;
+    font-size: 15px;
+    color: #5f6673;
+    line-height: 1.5;
+}
+
+.bottom-illustration {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.bottom-illustration img {
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 70px;
+}
+
+@media (max-width:768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 0;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .contact-left {
+        padding: 10px;
+        min-height: 500px;
+
+    }
+    .contact-info{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .contact-left h2 {
+         padding-left: 0;
+        margin-left: 0;
+    }
+ 
+    .contact-right {
+        margin-top: 10px;
+    }
+
+    .contact-bottom {
+        width: 90%;
+        min-height: 140px;
+        margin: 5px auto 0;
+        padding: 25px 20px;
+        justify-content: center;
+    }
+
+    .bottom-content {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        text-align: left;
+    }
+
+    .bottom-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .bottom-text h3 {
+        font-size: 18px;
+    }
+
+    .bottom-text p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .bottom-illustration {
+        width: 220px;
+        right: -20px;
+        bottom: 0;
+        opacity: 0.25;
+
+    }
+
+}
