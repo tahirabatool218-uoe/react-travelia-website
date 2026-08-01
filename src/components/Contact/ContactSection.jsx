@@ -2,7 +2,7 @@ import React from 'react'
 import './Contact.css'
 import { FaMapMarkedAlt, FaPhoneAlt,FaClock } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import travelQuote from '../../assets/travel-quote.png'
+import travelQuote from '../../assets/travel-quote1.png'
 import bottomImage from '../../assets/travel-illustration.jpg'
 function ContactSection() {
     return (
@@ -108,7 +108,7 @@ function ContactSection() {
 
                                   <div className='form-group'>
                                     <label htmlFor="message">Message</label>
-                                    <textarea  id="message" rows='5' placeholder='Write your message...'
+                                    <textarea  id="message" rows='4' placeholder='Write your message...'
                                     ></textarea>
 
                                 </div>
