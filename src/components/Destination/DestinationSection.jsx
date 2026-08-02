@@ -5,7 +5,7 @@ import destinations from '../../data/destinations'
 
 function DestinationSection() {
   return (
-   <section id="destination" className='destination-section'>
+   <section id="destinations" className='destination-section'>
 <div className="destination-heading">
     <h5>Popular destination</h5>
     <h2>Explore Top Destination</h2>

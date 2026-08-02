@@ -151,8 +151,9 @@
         line-height: 1.6;
     }
     .footer-column li{
-        margin-bottom: 12px;
+        margin-bottom: 20px;    
     }
+    
   .footer-socials{
     margin-top: 18px;
     gap: 12px;
