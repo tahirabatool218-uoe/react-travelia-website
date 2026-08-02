@@ -9,9 +9,8 @@
 
 .navbar {
     width: 90%;
-    background-color: blue;
+    background: blue;
     min-height: 75px;
-    height: auto;
     margin: auto;
     border-radius: 12px;
     display: flex;
@@ -19,21 +18,21 @@
     align-items: center;
     padding: 0 30px;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.logo-icon{
+
+.logo-icon {
     font-size: 24px;
     color: #E5E7EB;
-    flex-shrink: 0;
     margin-top: 5px;
-    
 }
+
 .logo h2 {
     color: white;
-    display: inline-block;
 }
 
 .navlinks {
@@ -45,14 +44,28 @@
 .navlinks a {
     text-decoration: none;
     color: white;
-   font-weight: 400;
-
+    font-weight: 400;
+    transition: .3s;
 }
+
+/* Desktop Hover */
+
 .navlinks a:hover {
     text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
     text-underline-offset: 10px;
-    
+}
 
+/* Desktop Active */
+
+.navlinks a.active {
+    color: #FFD54F;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #FFD54F;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
 }
 
 .btn {
@@ -60,16 +73,15 @@
     cursor: pointer;
     border-radius: 12px;
     background: white;
-    color: #2563eb;
+    color: #2563EB;
     border: none;
     font-size: 15px;
-    transition: 0.3s;
     font-weight: bold;
-
+    transition: .3s;
 }
 
 .btn:hover {
-    background: #2563eb;
+    background: #2563EB;
     color: white;
     border: 2px solid white;
 }
@@ -78,102 +90,99 @@
     display: none;
 }
 
-/* tablet */
-@media (max-width:992px) {
-    .navbar {
-        width: 90%;
-    }
+/* Tablet */
 
-    .navlinks {
-        gap: 10x;
-    }
+@media (max-width:992px){
+
+.navbar{
+    width:90%;
 }
 
-/*Mobile */
-@media (max-width:768px) {
-    .header {
-        padding: 0%;
+}
 
+/* Mobile */
 
-    }
+@media (max-width:768px){
 
-    .navbar {
-        width: 100%;
-        position: relative;
-        height: auto;
-        border-radius: 0%;
+.header{
+    padding:0;
+}
 
-    }
+.navbar{
+    width:100%;
+    border-radius:0;
+    position:relative;
+}
 
-    .logo h2 {
-        font-size: 1.5rem;
-    }
+.logo h2{
+    font-size:1.5rem;
+}
 
-    .navlinks {
-        display: none;
+.navlinks{
+    display:none;
+}
 
-    }
+.navlinks.active{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:80px;
+    right:10px;
+    width:60%;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:-5px 0 15px rgba(0,0,0,.3);
+    gap:35px;
+}
 
-    .navlinks.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        right: 10px;
-        width: 60%;
-        background: #fff;
-        padding: 30px;
-        border-radius: 12px;
-        z-index: 1000;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
-        gap: 35px;
+.navlinks li{
+    width:100%;
+}
 
-    }
-     .navlinks.active a{
-    color: #222; 
-    }
+.navlinks.active a{
+    color:#222;
+    display:inline-block;
+    text-decoration:none;
+    transition:.3s;
+}
 
-    .navlinks li {
-        width: 100%;
-    }
+/* Mobile Hover */
 
-    .navlinks a {
-        display: block;
-        font-size: 18px;
-        color: #333;
-    }
+.navlinks.active a:not(.active):hover{
+    text-decoration:underline;
+    text-decoration-color:#2563EB;
+    text-decoration-thickness:2px;
+    text-underline-offset:8px;
+}
 
-    .nav-right {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
+/* Mobile Active */
 
-    .btn {
-        padding: 10px 18px;
-        font-size: 14px;
-    }
+.navlinks.active a.active{
+    color:#2563EB;
+    font-weight:600;
+    text-decoration:underline;
+    text-decoration-color:#2563EB;
+    text-decoration-thickness:3px;
+    text-underline-offset:8px;
+}
 
-    .menu-icon {
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-        color: #fff;
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
 
-    }
+.btn{
+    padding:10px 18px;
+    font-size:14px;
+}
 
-    /* .navbar{
-       flex-direction: column;
-       height: auto;
-       padding: 20px;
-       align-items: flex-start;
-
-    }
-    .navlinks{
-        flex-direction: column;
-        gap: 10x;
-        margin: 20px 0;
-
-    } */
+.menu-icon{
+    display:block;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
 
 }
