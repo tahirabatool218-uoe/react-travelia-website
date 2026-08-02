@@ -97,7 +97,7 @@ The website is optimized for:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/travelia.git
+git clone https://github.com/tahirabatool218-uoe/react-travelia-website.git
 ```
 
 ### Navigate to the project
@@ -141,20 +141,9 @@ This project helped strengthen my understanding of:
 
 ---
 
-## 📸 Screenshots
-Home Page
-![alt text](image-3.png)
-Destination Section
-![alt text](image-4.png)
-Services Section
-![alt text](image-2.png)
-About Section
-![alt text](image-5.png)
-Footer Section
-![alt text](image.png)
+## 📸 Preview
 
-
-
+![alt text](Preview.png)
 ---
 
 ## 🌐 Live Demo
