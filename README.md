@@ -142,14 +142,18 @@ This project helped strengthen my understanding of:
 ---
 
 ## 📸 Screenshots
+Home Page
+![alt text](image-3.png)
+Destination Section
+![alt text](image-4.png)
+Services Section
+![alt text](image-2.png)
+About Section
+![alt text](image-5.png)
+Footer Section
+![alt text](image.png)
 
-You can add screenshots here after uploading them to the repository.
 
-- Home Page
-- Destinations Section
-- Services Section
-- Contact Section
-- Mobile View
 
 ---
 
@@ -157,7 +161,7 @@ You can add screenshots here after uploading them to the repository.
 
 **Vercel Deployment**
 
-https://react-travelia-website-blue.vercel.app?_vercel_share=dXVolWNqkusqixXZRvBFB23hqir34nCq
+https://react-travelia-website-blue.vercel.app
 
 ---
 
